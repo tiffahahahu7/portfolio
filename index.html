@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tiffany Hu</title>
+</head>
+<body>
+  <!-- Back to top button, credit to https://codepen.io/michalwyrwa/pen/GBaPPj -->
+    <button type="button" class="btn btn-secondary btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fa-solid fa-chevron-up" style="color: #7C9C84;"></i>
+    </button>
+  <!-- nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-2 mb-md-5">
+        <div class="container">
+          <a class="navbar-brand" href="/"><span class="h1 link-success text-decoration-none">T.H.</span></a>
+          <!-- toggle button for mobile nav -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav gap-md-5 h5">
+              <li class="nav-item">
+                <a class="nav-link custom-link link-success" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-link link-success" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-link link-success" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-link link-success" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- header  -->
+    <header id="intro-container">
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-0">
+                <div class="col-md-6 text-center text-md-start my-3">
+                    <h1 id="intro" class="fw-bold text-success" ></h1>
+                    <!-- <p class="lead my-3 px-3 py-2 border-start border-success border-5 bg-light">A <span class="text-success">
+                        Front-End Web Devleoper & Designer</span> with multidisciplinary background in <span class="text-success">
+                        Media and Communication</span>. 
+                    </p> -->
+                    <div class="tags d-flex flex-wrap gap-2 mx-1 my-3 align-items-center justify-content-center justify-content-md-start">
+                      <div class="tag-item d-inline border rounded-pill border-2 border-success px-3 py-1 text-success"> <i class="bi bi-code-slash"></i>&nbsp; Web Developer</div>
+                      <div class="tag-item d-inline border rounded-pill border-2 border-success px-3 py-1 text-success"> <i class="fa-solid fa-graduation-cap" style="color: #5aa960;"></i>&nbsp; Student</div>
+                      <!-- <div class="tag-item d-inline border rounded-pill border-2 border-success px-3 py-1 text-success"> <i class="bi bi-vector-pen"></i> Designer</div> -->
+                      <div class="tag-item d-inline border rounded-pill border-2 border-success px-3 py-1 text-success"> <i class="bi bi-pencil-square"></i>&nbsp; Writer</div>
+                      <div class="tag-item d-inline border rounded-pill border-2 border-success px-3 py-1 text-success"> <i class="bi bi-chat-left-text-fill"></i>&nbsp; Linguist</div>
+                      <div class="tag-item d-inline border rounded-pill border-2 border-success px-3 py-1 text-success"> <i class="fa-solid fa-earth-asia" style="color: #5aa960;"></i>&nbsp; Traveller</div>
+                      <div class="tag-item d-inline border rounded-pill border-2 border-success px-3 py-1 text-success"> <i class="fa-solid fa-bowl-rice" style="color: #5aa960;"></i>&nbsp; Food maker</div>
+                      <div class="tag-item d-inline border rounded-pill border-2 border-success px-3 py-1 text-success"> <i class="bi bi-person-bounding-box"></i>&nbsp; ISFJ</div>
+                      <div class="tag-item d-inline border rounded-pill border-2 border-success px-3 py-1 text-success"> <i class="bi bi-brightness-alt-high-fill"></i>&nbsp; Optimist</div>
+                      <div class="tag-item d-inline border rounded-pill border-2 border-success px-3 py-1 text-success"> <i class="bi bi-stack"></i>&nbsp; Lifelong Learner</div>
+                      <a href="#about" class="intro-about bg-primary rounded-pill px-3 py-1 text-secondary text-decoration-none"><i class="bi bi-signpost"></i> Learn more about me</a>
+                    </div>
+                </div>
+                <div class="headerImg col-md-6">
+                    <img class="img-fluid" src="./images/me_in_forest.JPG" alt="me jumping in the forest">
+                </div>
+            </div>
+            <div class="mt-5 text-center bounce text-success"><i class="lead bi bi-chevron-double-down"></i></div>
+        </div>
+    </header>
+
+    <!-- projects -->
+
+    <!-- <section id="projects" class="bg-light mt-4 p-3">
+        <div class="container-lg">
+            <h1 class="m-4 text-center">Projects</h1>
+            <div class="row my-5 align-items-center justify-content-center">
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0" style="width: 18rem;">
+                        <div class="card-header bg-warning">React</div>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Random Quote Machine</h5>
+                          <p class="card-subtitle my-2 text-muted">React</p>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">VIEW LIVE</a>
+                          <a href="#" class="card-link">VIEW CODE</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="projects" class="bg-light mt-4 p-3">
+        <div class="container-fluid">
+            <h1 class="m-4 text-center text-success">Projects</h1>
+            <div class="row my-5 justify-content-center">
+                <div class="col-lg-9">
+                  <div class="card mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-6 d-flex justify-content-center">
+                          <img src="./images/drum_dazzler.JPG" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card-body">
+                            <h5 class="card-title text-success">Drum Dazzler</h5>
+                            <p class="card-text">This app is a rhythmic playground that allows users to compose captivating beats by simply clicking or pressing keys. Start to play!</p>
+                            <p class="card-text"><span class="text-muted fst-italic shadow-sm">React | CSS | Responsive Web Design</span></p>
+                            <hr>
+                            <a href="https://tiffahahahu7.github.io/drum-dazzler/" class="btn btn-primary text-light me-2">VIEW LIVE</a>
+                            <a href="https://github.com/tiffahahahu7/drum-dazzler" class="btn btn-primary text-light">VIEW CODE</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>   
+                <div class="col-md-10 col-lg-9 col-xxl-6">
+                  <div class="card mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-6 d-flex justify-content-center">
+                          <img src="./images/calculator.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card-body">
+                            <h5 class="card-title text-success">Calculator</h5>
+                            <p class="card-text">A React Calculator app with the ability to perform basic arithmetic calculations, handle decimal values, and work with negative numbers.</p>
+                            <p class="card-text"><span class="text-muted fst-italic shadow-sm">React | CSS | Responsive Web Design</span></p>
+                            <a href="https://tiffahahahu7.github.io/calculator/" class="btn btn-primary text-light me-2">VIEW LIVE</a>
+                            <a href="https://github.com/tiffahahahu7/calculator" class="btn btn-primary text-light">VIEW CODE</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>            
+                <div class="col-md-10 col-lg-9 col-xxl-6">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-6 d-flex justify-content-center">
+                              <img src="./images/random_quote.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h5 class="card-title text-success">Random Quote Machine</h5>
+                              <p class="card-text">A React app that allows users to generate random quotes, save favorites, delete saved quotes, and share quotes on Twitter.</p>
+                              <p class="card-text"><span class="text-muted fst-italic shadow-sm">React | API | Responsive Web Design</span></p>
+                              <a href="https://tiffahahahu7.github.io/RandomQuoteMachine/" class="btn btn-primary text-light me-2">VIEW LIVE</a>
+                              <a href="https://github.com/tiffahahahu7/RandomQuoteMachine" class="btn btn-primary text-light">VIEW CODE</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-10 col-lg-9 col-xxl-6">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-6 d-flex justify-content-center">
+                            <img src="./images/introvert.JPG" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h5 class="card-title text-success">Introvert Copilot</h5>
+                              <p class="card-text">An app to help introverts gain inspiration on how to initiate conversations with their intended targets, by consulting their AI assistant!</p>
+                              <p class="card-text"><span class="text-muted fst-italic shadow-sm">HTML | CSS | JavaScript | API | Node.js</span></p>
+                              <a href="https://github.com/tiffahahahu7/IntrovertCopilot" class="btn btn-primary text-light">VIEW CODE</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-10 col-lg-9 col-xxl-6">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-6 d-flex justify-content-center">
+                            <img src="./images/paws_header.png" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h5 class="card-title text-success">Pets of Ottawa</h5>
+                              <p class="card-text">My first web app which is designed for a fictional digital pets magazine.<small> Apologies for the non-responsive design during the early phase.</small></p>
+                              <p class="card-text"><span class="text-muted fst-italic shadow-sm">HTML | CSS | Adobe Photoshop </span></p>
+                              <a href="https://tiffahahahu7.github.io/PetsOfOttawa/" class="btn btn-primary text-light me-2">VIEW LIVE</a>
+                              <a href="https://github.com/tiffahahahu7/PetsOfOttawa" class="btn btn-primary text-light">VIEW CODE</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-primary p-3">
+        <div class="container">
+            <h1 class="m-4 text-center text-secondary">About Me</h1>
+            <div class="row justify-content-around align-items-center">
+              <div class="col-md-10 col-lg-4">
+                <img class="img-fluid" src="./images/me_Hallo.png">
+              </div>
+              <div class="col-md-10 col-lg-7 mt-4 mt-xl-0">
+                <p class="lead text-light">Hello World! 👋 I’m Mengqi Hu and you can just call me Tiffany. </p>
+                <p class="lead text-light">I'm a passionate student in Algonquin College's Web Development and Internet Application program 🇨🇦, set to graduate before Christmas next year. Additionally, I hold a bachelor's degree in Journalism and Communication from the Chinese University of Hong Kong 🇭🇰. It is intriguing for me to explore connections with people either from face-to-face conversations or web-based user experiences.</p>
+                <p class="lead text-light">Coding, to me 👩‍💻, is like a magical realm where boundless imagination comes to life. The learning journey to master this enchanting craft is one I thoroughly enjoy, as I continually push myself to unlock new levels of wizardry and hone my skills 🪄.  While I acknowledge that there is an extensive path ahead, I eagerly anticipate every step of the way!</p>
+              </div>
+            </div>
+            <h1 class="m-4 text-center text-secondary">My Skillset</h1>
+            <div class="row my-5 justify-content-center justify-content-md-start g-2">
+              <div class="col-6 col-md-2 text-center"><i class="fa-brands fa-html5 fa-3x" style="color: #313d34;"></i><p class="text-secondary">HTML5</p></div>
+              <div class="col-6 col-md-2 text-center"><i class="fa-brands fa-css3-alt fa-3x" style="color: #313d34;"></i><p class="text-secondary">CSS3</p></div>
+              <div class="col-6 col-md-2 text-center"><i class="fa-brands fa-js fa-3x" style="color: #313d34;"></i><p class="text-secondary">JavaScript</p></div>
+              <div class="col-6 col-md-2 text-center"><i class="fa-brands fa-react fa-3x" style="color: #313d34;"></i><p class="text-secondary">React</p></div>
+              <!-- <div class="col-6 col-md-2 text-center"><i class="devicon-jquery-plain" style="color: #313d34; font-size: 3rem;"></i><p class="text-secondary">jQuery</p></div> -->
+              <div class="col-6 col-md-2 text-center"><i class="fa-regular fa-window-restore fa-3x" style="color: #313d34;"></i><p class="text-secondary">Responsive Design</p></div>
+              <div class="col-6 col-md-2 text-center"><i class="devicon-csharp-plain" style="color: #313d34; font-size: 3rem;"></i><p class="text-secondary">C#</p></div>
+              <div class="col-6 col-md-2 text-center"><i class="devicon-dot-net-plain" style="color: #313d34; font-size: 3rem;"></i><p class="text-secondary">ASP.NET</p></div>
+              <div class="col-6 col-md-2 text-center"><i class="devicon-bash-plain" style="color: #313d34; font-size: 3rem;"></i><p class="text-secondary">Bash</p></div>
+              <div class="col-6 col-md-2 text-center"><i class="fa-solid fa-database fa-3x" style="color: #313d34;"></i><p class="text-secondary">SQL</p></div>
+              <div class="col-6 col-md-2 text-center"><i class="fa-brands fa-python fa-3x" style="color: #313d34;"></i><p class="text-secondary">Python</p></div>
+              <div class="col-6 col-md-2 text-center"><i class="devicon-git-plain" style="color: #313d34; font-size: 3rem;"></i><p class="text-secondary">Git</p></div>
+              <div class="col-6 col-md-2 text-center"><img src="./images/icon_adobe.svg" class="icon-adobe"><p class="text-secondary">Adobe Creative Cloud</p></div>
+            </div>
+            <h1 class="m-4 text-center text-secondary">Articles and Publications</h1>
+            <div class="row mb-5 justify-content-center g-2">
+            <p class="col-md-8 text-center text-secondary">/ Most of my past writings are in Chinese, and I apologize if that's not accessible to everyone. <br>I will actively work towards producing more content in English. Stay tuned for more! /</p>
+              <div id="carouselArticles" class="carousel slide col-md-8">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselArticles" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselArticles" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselArticles" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <!-- <button type="button" data-bs-target="#carouselArticles" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="https://theinitium.com/article/20191018-notes-meeting-with-principal/" target="_blank">
+                      <img src="./images/./article_notes_meeting_with_principal.jpg" class="d-block w-100" alt="article_notes_meeting_with_principal">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h2>Meeting Journal: Dialogue with the Univerisity President On and Off the Stage</h2>
+                        <p>Publication: Initium | Language: Chinese</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://ubeat.com.cuhk.edu.hk/145-coverstory/" target="_blank">
+                      <img src="./images/article_unspoken_wounds.jpeg" class="d-block w-100" alt="article_unspoken_wounds">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h2>Unspoken Wounds: Secret Treatments of Volunteer Doctors</h2>
+                        <p>Publication: U-Beat Magazine | Language: Chinese | Award: Human Rights Press Awards</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://ubeat.com.cuhk.edu.hk/144-davidwebb/" target="_blank">
+                      <img src="./images/./article_david_webb.jpeg" class="d-block w-100" alt="article_david_webb">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h2>David Webb: How I Understand the Anti-ELAB Movement</h2>
+                        <p>Publication: U-Beat Magazine | Language: Chinese</p>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <a href="https://ubeat.com.cuhk.edu.hk/137_china/" target="_blank">
+                      <img src="./images/article_one_child.jpeg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h2>Life Against the Odds: Testimonies from China's Second-Born Children</h2>
+                        <p>Publication: U-Beat Magazine | Language: Chinese</p>
+                      </div>
+                    </a>
+                  </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselArticles" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselArticles" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light p-3">
+      <div class="container">
+          <h1 class="m-4 text-center text-success">Contact</h1>
+          <div class="row justify-content-center my-5">
+            <div class="col-md-5 text-center">
+              <p class="lead">
+                Thanks for checking out my portfolio! If you want to get in touch, feel free to <span class="text-success fw-bold">shoot me an email</span> or <span class="text-success fw-bold">send a message on LinkedIn</span>. <br> Let's connect and see how we can collaborate together!
+              </p>
+            </div>
+            <div class="col-md-3 text-center d-flex justify-content-evenly align-items-center">
+              <a href="mailto:tiffahahahu7@gmail.com"><i class="bi bi-envelope-fill lead"></i></a>
+              <a href="https://www.linkedin.com/in/tiffahahahu7/"><i class="bi bi-linkedin lead"></i></a>
+              <a href="https://github.com/tiffahahahu7"><i class="bi bi-github lead"></i></a>
+            </div>
+          </div>
+      </div>
+  </section>
+    
+    <footer>
+        <p class="bg-info text-secondary text-center py-3 m-0">Developed and designed by Tiffany Hu <i class="bi bi-stars"></i></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/db62e37eef.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+</body>
+</html>
