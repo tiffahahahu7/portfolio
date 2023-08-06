@@ -100,6 +100,10 @@ nav {
     height: 48px;
 }
 
+.contact-icon:hover{
+    color: #617a67 !important;
+}
+
 
 /* footer */
 
