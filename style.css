@@ -100,16 +100,12 @@ nav {
     height: 48px;
 }
 
-.contact-icon:hover{
-    color: #617a67 !important;
+.contact-icon {
+    color: #7C9C84 !important;
 }
 
 
-/* footer */
-
-/* footer {
-    font-family: Times, 'Times New Roman', serif;
-    background-color: #7C9C84;
-} */
-
+.contact-icon:hover {
+    color: #617a67 !important;
+}
 
