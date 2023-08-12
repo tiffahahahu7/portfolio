@@ -15,15 +15,44 @@ body{
 }
 
 /* nav bar */
-nav {
+/* animated hover underline effect */
+
+.nav-link {
+    padding: 20px 0px;
+    position: relative;
     opacity: 0.9;
 }
+
+.nav-link:hover {
+    opacity: 1;
+  }
+
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #EEEAE8;
+}
+
+.nav-item a::before {
+    width: 0%;
+    bottom: 10px;
+}
   
+.nav-item a:hover::before {
+    width: 90%;
+}
+
 /* header */
 
 .tag-item:hover {
     background-color: #6CA766 !important;
     color:white !important;
+}
+
+.tag-item:hover i {
+    color: white !important;
 }
 
 .intro-about:hover{
@@ -95,6 +124,15 @@ nav {
     object-fit: contain;
 }
 
+.btn:hover{
+    background-color: #617a67 !important;
+    color: white !important;
+}
+
+.btn:hover i{
+    color: white !important;
+}
+
 .icon-adobe {
     width: 48px;
     height: 48px;
@@ -104,8 +142,6 @@ nav {
     color: #7C9C84 !important;
 }
 
-
 .contact-icon:hover {
     color: #617a67 !important;
 }
-
