@@ -44,6 +44,10 @@ body{
     width: 90%;
 }
 
+.nav-link:focus {
+    outline: 2px solid #EEEAE8; 
+  }
+
 /* header */
 
 .tag-item:hover {
